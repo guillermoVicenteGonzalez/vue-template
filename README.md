@@ -1,3 +1,16 @@
+## Todo
+
+- [x] vsconfig
+- [x] Scss
+- [x] eslint
+- [x] prettier config
+- [ ] vite config
+- [ ] axios
+- [ ] storybook
+- [ ] docker
+- [ ] blueprints ?
+- [ ] Typescript variant
+
 # vue-template
 
 This template should help get you started developing with Vue 3 in Vite.
