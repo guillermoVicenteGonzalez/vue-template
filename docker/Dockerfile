@@ -11,12 +11,10 @@ COPY . .
 EXPOSE 5173
 CMD ["npm","run","dev"]
 
-
 FROM deps AS prod-builder
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 RUN npm run build
-
 
 FROM prod-builder AS production
 COPY --from=prod-builder /app/dist .
