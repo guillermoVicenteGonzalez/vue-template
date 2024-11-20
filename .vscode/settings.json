@@ -5,6 +5,7 @@
 		"vite.config.*": "jsconfig*, vitest.config.*, cypress.config.*, playwright.config.*",
 		"package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, .eslint*, eslint*, .prettier*, prettier*, .editorconfig"
 	},
+	"blueprint.templatesPath": ["./.blueprints"],
 
 	"editor.formatOnSave": true,
 	"editor.formatOnPaste": true,

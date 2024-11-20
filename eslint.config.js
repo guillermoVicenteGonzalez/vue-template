@@ -35,6 +35,8 @@ export default [
 		name: "custom vue rules",
 		rules: {
 			"vue/no-arrow-functions-in-watch": "error",
+			"vue/no-unused-vars": "error",
+
 			// "vue/no-template-key": "error",
 			"vue/define-emits-declaration": ["error", "type-based"],
 			"vue/define-props-declaration": ["error", "runtime"],
@@ -66,11 +68,13 @@ export default [
 	{
 		name: "custom typescript rules",
 		rules: {
+			indent: ["error", 4],
+			complexity: ["error", 10],
+			"prefer-arrow-callback": "warn",
 			//rules for both ts and vue files
 			"@typescript-eslint/array-type": "error",
 			"@typescript-eslint/class-methods-use-this": "error",
 			//rules for vue
-			"vue/no-unused-vars": "error",
 			//rules for typescript
 			"@typescript-eslint/consistent-type-definitions": "error",
 			"@typescript-eslint/no-empty-function": "error",
@@ -86,7 +90,7 @@ export default [
 
 			//booleans have verb is
 		},
-		files: ["**/*.{ts,mts,tsx,vue}"],
+		files: ["/src/**/*.{ts,mts,tsx,vue}"],
 	},
 	skipFormatting,
 ];
