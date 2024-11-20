@@ -3,5 +3,12 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps({});
+
+interface {{pascalCase name  }}Props {
+
+}
+
+const {} = defineProps<{{pascalCase name  }}Props >()
 </script>
+
+<style lang="scss" scoped></style>

@@ -44,7 +44,7 @@ export default [
 
 			// "vue/no-template-key": "error",
 			"vue/define-emits-declaration": ["error", "type-based"],
-			"vue/define-props-declaration": ["error", "runtime"],
+			"vue/define-props-declaration": ["error", "type-based"],
 			"vue/enforce-style-attribute": [
 				"error",
 				{
