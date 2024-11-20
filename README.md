@@ -6,10 +6,11 @@
 - [x] prettier config
 - [ ] vite config
 - [ ] axios
-- [ ] storybook
-- [ ] docker
-- [ ] blueprints ?
-- [ ] Typescript variant
+- [x] storybook
+- [x] docker
+- [x] blueprints ?
+- [x] Typescript variant
+- [ ] Husky
 
 # vue-template
 
