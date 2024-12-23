@@ -16,6 +16,29 @@
 
 This template should help get you started developing with Vue 3 in Vite.
 
+## Global SASS styles
+
+if using sass, paste the following in the vite.config.js file to have globally available styles variables....
+
+```js
+	css: {
+		preprocessorOptions: {
+			scss: {
+				additionalData: `@use "./src/assets/global.scss";`,
+			},
+		},
+	},
+```
+
+The use of @import is not recommended as it is deprecated, but can still be used and makes things easier.
+
+If using @use, we have to forward any styles we want to be global from the `global.scss` file
+
+```scss
+//global.scss
+@forward ./variables.scss;
+```
+
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).

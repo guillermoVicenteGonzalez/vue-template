@@ -41,6 +41,12 @@ export default [
 		rules: {
 			"vue/no-arrow-functions-in-watch": "error",
 			"vue/no-unused-vars": "error",
+			"vue/no-mutating-props": [
+				"error",
+				{
+					shallowOnly: true,
+				},
+			],
 
 			// "vue/no-template-key": "error",
 			"vue/define-emits-declaration": ["error", "type-based"],
@@ -86,7 +92,8 @@ export default [
 			"@typescript-eslint/no-explicit-any": "error",
 			"@typescript-eslint/no-shadow": "error",
 			"@typescript-eslint/array-type": "error",
-			"@typescript-eslint/no-unused-expressions": "error",
+			"no-unused-expressions": "off",
+			"@typescript-eslint/no-unused-expressions": "off",
 			"@typescript-eslint/naming-convention": [
 				"error",
 				{ selector: "variableLike", format: ["camelCase"] },
